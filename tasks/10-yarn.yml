@@ -18,6 +18,9 @@
     state: present
     update_cache: yes
 
+- name: Install YARN package manager
+  package: name=yarn state=latest
+
 - name: Update all packages in package.json to their latest version.
   yarn:
     path: /var/www
