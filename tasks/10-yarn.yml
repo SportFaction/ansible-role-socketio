@@ -21,8 +21,18 @@
 - name: Install YARN package manager
   package: name=yarn state=latest
 
-- name: Update all packages in package.json to their latest version.
-  yarn:
-    path: /var/www
-    state: latest
+# - name: "Yarn | De-configure shell profiles"
+#   lineinfile:
+#     dest: "ubuntu/{{ item }}"
+#     regexp: "PATH:{{ yarn_global_path }}/bin"
+#     line:  'export PATH="$PATH:/usr/local/bin";'
+#     state: present
+#   failed_when: false
+#   with_items:
+#     - "{{ yarn_shell_profiles }}"
+
+# - name: Update all packages in package.json to their latest version.
+#   yarn:
+#     path: /var/www
+#     state: latest
 
