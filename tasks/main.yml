@@ -2,7 +2,7 @@
 - include: 00-git.yml
 
 - name: Update all packages in package.json to their latest version.
-yarn:
-  path: /var/www
-  state: latest
+  yarn:
+    path: /var/www
+    state: latest
 
