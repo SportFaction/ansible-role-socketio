@@ -1,5 +1,4 @@
 ---
 - include: 00-git.yml
 
-- include: 10-yarn.yml
 
