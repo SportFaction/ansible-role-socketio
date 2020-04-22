@@ -1,1 +1,0 @@
-pm2 start /var/www/sf-socketio/index.js
