@@ -1,4 +1,10 @@
 ---
 - include: 00-git.yml
 
-
+- name: Template a file to /etc/pm2-init.sh
+  template:
+    src: /templates/pm2-init.sh
+    dest: /etc/pm2-init.sh
+    owner: ubuntu
+    group: ubuntu
+    mode: u=rwx,g=r,o=r
